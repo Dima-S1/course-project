@@ -1,0 +1,82 @@
+.hero {
+	color: var(--white-color);
+	position: relative;
+	z-index: 1;
+}
+
+.hero-swiper {
+	position: absolute;
+	top: -70px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: bgzoom 5s infinite alternate;
+}
+
+.slide1 {
+	background-image: url(../img/hero_img.jpg);
+}
+
+.slide2 {
+	background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1.jpg);
+}
+
+.slide3 {
+	background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.jpg);
+}
+
+.hero-desc {
+	padding-top: 73px;
+	padding-bottom: 122px;
+	width: 36%;
+	font-weight: 700;
+	z-index: 999;
+}
+
+.hero-desc__title {
+	padding-bottom: 20px;
+	font-size: 72px;
+	line-height: 82.8px;
+}
+
+.hero-desc__text {
+	padding-bottom: 91px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.hero-desc__btn {
+	padding: 23px 33px;
+	font-size: 18px;
+	transition: border-color 0.3s, background-color 0.3s;
+}
+
+.hero-container {
+	display: flex;
+}
+
+.hero-desc__btn:hover {
+	border-color: #d1a9f0;
+	transition: border-color 0.3s;
+}
+
+.hero-desc__btn:focus {
+	outline: none;
+	border-color: #9d5cd0;
+	transition: border-color 0.3s;
+}
+
+.hero-desc__btn:active {
+	border-color: #d1a9f0;
+	background-color: #7943a4;
+	transition: border-color 0.3s, background-color 0.3s;
+}
+
+
