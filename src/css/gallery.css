@@ -5,7 +5,7 @@
   background-position: center;
 }
 
-.gallery-container {
+.gallery__container {
 	padding-top: 89px;
 	padding-right: 15px;
 	padding-bottom: 80px;
@@ -25,15 +25,15 @@
 	padding-bottom: 24px;
 }
 
-.gallery-left__text {
-  padding-bottom: 10px;
-}
-
 .gallery-filter {
   margin-bottom: auto;
   display: flex;
   flex-direction: column;
 }
+
+.gallery-filter__text {
+	padding-bottom: 10px;
+  }
 
 .choices {
 	overflow: visible;
@@ -106,12 +106,16 @@
 	background-color: transparent;
 }
 
-.gallery-left__bot {
+.is-selected {
+	display: none;
+}
+
+.gallery__promo {
 	width: 80%;
 	transform: translateY(10px);
 }
 
-.gallery-left__bot__link {
+.gallery__promo--link {
 	color: #c283f3;
 }
 
@@ -120,7 +124,7 @@
 	height: 100%;
 }
 
-.gslide { 
+.gallery__slide { 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -159,7 +163,7 @@
 	transition: display 0.3s;
 }
 
-.navigation-buttons {
+.swiper__navigation-buttons {
 	margin-top: 16px;
 	margin-left: 3px;
 	margin-bottom: 30px;
@@ -171,7 +175,7 @@
 	overflow: hidden;
 }
 
-.gallery-button {
+.gallery__button {
 	margin-top: 0;
 	width: 30px;
 	height: 100%;
@@ -186,23 +190,23 @@
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
-.gallery-button::after {
+.gallery__button::after {
 	font-size: 10px;
 	color: var(--white-color);
 }
 
-.navigation-buttons .swiper-pagination {
+.swiper__navigation-buttons .swiper-pagination {
 	position: relative;
 	width: unset;
 	bottom: 0;
 }
 
-.gallery-button:focus {
+.gallery__button:focus {
 	border-color: #7943a4;
 }
 
-.gallery-left__bot__link:focus,
-.gslide img:focus {
+.gallery__promo--link:focus,
+.gallery__slide img:focus {
 	outline:  2px solid #7943a4;
 }
 
@@ -210,13 +214,13 @@
 	outline: 3px solid #7943a4;;
 }
 
-.gallery-button:hover {
+.gallery__button:hover {
 	background-color: #9d5cd0;
 	border-color: #9d5cd0;
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
-.gallery-left__bot__link:hover {
+.gallery__promo--link:hover {
 	text-decoration-line: underline;
 }
 
@@ -225,12 +229,12 @@
 	transition: display 0.3s;
 }
 
-.gallery-button:active {
+.gallery__button:active {
 	background-color: #7943a4;
 	border: 2px solid #d1a9f0;
 }
 
-.gallery-left__bot__link:active {
+.gallery__promo--link:active {
 	color: #7943a4;
 }
 
