@@ -60,6 +60,9 @@
 }
 
 .header-bot__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
 	font-size: 18px;
 	color: var(--white-color);
 	position: relative;
@@ -69,14 +72,13 @@
 	display: none;
 	padding: 40px;
 	position: absolute;
-	top: 51px;
+	top: 70px;
 	left: 0;
 	background: rgba(0, 0, 0, 0.4);
 }
 
 .header-dropdown__title {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
 	cursor: pointer;
 	transition: color 0.3s;
 }
@@ -84,7 +86,7 @@
 .header-dropdown__title::after {
 	content: '';
 	position: absolute;
-	top: 39%;
+	top: 45%;
 	right: -11px;
 	width: 7px;
 	height: 7px;

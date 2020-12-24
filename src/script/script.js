@@ -41,14 +41,25 @@ input.onblur = function() {
 let el = document.getElementsByClassName('header-bot__item');
 
 for (let i = 0; i < el.length; i++) {
-	el[i].addEventListener('click', toggleMenu, false);
+	el[i].addEventListener('mouseenter', showList, false)
+	el[i].addEventListener('mouseleave', hideList, false)
 }
 
-function toggleMenu() {
-	this.children[0].classList.toggle('show--title');
-	this.children[0].classList.toggle('after');
+function showList() {
+	this.children[0].classList.add('show--title');
+	this.children[0].classList.add('after');
 	if(this.children.length > 1) {
-		this.children[1].classList.toggle('show--list');
+		this.children[1].classList.add('show--list');
+	} else {
+		return false;
+	}
+};
+
+function hideList() {
+	this.children[0].classList.remove('show--title');
+	this.children[0].classList.remove('after');
+	if(this.children.length > 1) {
+		this.children[1].classList.remove('show--list');
 	} else {
 		return false;
 	}
