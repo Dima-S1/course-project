@@ -20,36 +20,7 @@ const choices = new Choices(element, {
 	itemSelectText: '',
 });
 
-const headerElement1 = document.querySelector('.select1');
-const choices1 = new Choices(headerElement1, {
-	searchEnabled: false,
-	itemSelectText: '',
-});
-
-const headerElement2 = document.querySelector('.select2');
-const choices2 = new Choices(headerElement2, {
-	searchEnabled: false,
-	itemSelectText: '',
-});
-
-const headerElement3 = document.querySelector('.select3');
-const choices3 = new Choices(headerElement3, {
-	searchEnabled: false,
-	itemSelectText: '',
-});
-
-const headerElement4 = document.querySelector('.select4');
-const choices4 = new Choices(headerElement4, {
-	searchEnabled: false,
-	itemSelectText: '',
-});
-
-const headerElement5 = document.querySelector('.select5');
-const choices5 = new Choices(headerElement5, {
-	searchEnabled: false,
-	itemSelectText: '',
-});
-
+/* Заливка иконки поиска*/
 
 const rect = document.querySelector('.header-bot-search__btn svg rect');
 const path = document.querySelector('.header-bot-search__btn svg path');
@@ -64,3 +35,21 @@ input.onblur = function() {
 	rect.classList.remove('header-bot-search__bth--fill');
 	path.classList.remove('header-bot-search__bth--fill')
 }
+
+/* Header выпадающий список*/
+
+let el = document.getElementsByClassName('header-bot-item');
+
+for (let i = 0; i < el.length; i++) {
+	el[i].addEventListener('click', toggleMenu, false);
+}
+
+function toggleMenu() {
+	this.children[0].classList.toggle('is-open--title');
+	this.children[0].classList.toggle('after');
+	if(this.children.length > 1) {
+		this.children[1].classList.toggle('is-open--list');
+	} else {
+		return false;
+	}
+};
