@@ -1,322 +1,278 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Художественная галерея Blanchard</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/swiper-min.css">
-	<link rel="stylesheet" href="css/choices.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script defer src="libs/swiper-min.js"></script>
-	<script defer src="libs/choices.min.js"></script>
-	<script defer src="script/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLANCHARD художетсвенная галлерея</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/simplebar.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/libs/simplebar.js"></script>
+  <script defer src="/script/script.js"></script>
 </head>
-
 <body>
-	<header class="header">
-		<div class="header__top">
-			<div class="container header__container">
-				<img src="img/logo.png" alt="Логотип Blanchard Художественная галерея" class="header__logo">
-	
-				<nav class="header__nav header-nav">
-					<ul class="header-nav__list">
-		 				<li class="header-nav__item">
-							<a href="#about-us" class="header-nav__link">О нас</a>
-						</li>
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-container header-top-container">
+        <button class="header-burger">
+          <span class="header-burger__line header-burger__line__1"></span>
+          <span class="header-burger__line header-burger__line__2"></span>
+          <span class="header-burger__line header-burger__line__3"></span>
+        </button>
 
-						<li class="header-nav__item">
-							<a href="#gallery" class="header-nav__link">Галерея</a>
-						</li>
+        <div class="header-burger-menu">
+          <button class="header-burger-menu-close header-search-open-close"></button>
+          <nav class="header-burger-nav">
+            <ul class="header-burger-nav-list">
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  О нас
+                </a>
+              </li>
 
-						<li class="header-nav__item">
-							<a href="#" class="header-nav__link">Каталог</a>
-						</li>
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  Галерея
+                </a>
+              </li>
 
-						<li class="header-nav__item">
-							<a href="#" class="header-nav__link">События</a>
-						</li>
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  Каталог
+                </a>
+              </li>
 
-						<li class="header-nav__item">
-							<a href="#" class="header-nav__link">Издания</a>
-						</li>
-						
-						<li class="header-nav__item">
-							<a href="#" class="header-nav__link">Проекты</a>
-						</li>
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  События
+                </a>
+              </li>
 
-						<li class="header-nav__item">
-							<a href="#" class="header-nav__link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-	
-				<button class="header__enter">
-					<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.120569.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 1235 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-					</svg>							
-					Войти
-				</button>
-			</div>	
-		</div>
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  Издания
+                </a>
+              </li>
 
-		<div class="header__bot header-bot">
-			<div class="container header-bot__container">
-				<ul class="header-bot__list">
-					<li class="header-bot__item">
-						<span class="header-dropdown__title">Реализм</span>	
-						<ul class="header-dropdown header__dropdown">
-							<li class="header-dropdown__item">Тинторетто</li>		
-							<li class="header-dropdown__item">Фридрих</li>		
-							<li class="header-dropdown__item">Леонардо</li>		
-							<li class="header-dropdown__item">Верроккье</li>						
-						</ul>
-					</li>
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  Проекты
+                </a>
+              </li>
 
-					<li class="header-bot__item">
-						<span class="header-dropdown__title">Импрессионизм</span>	
-						<ul class="header-dropdown header__dropdown">
-							<li class="header-dropdown__item">Тинторетто</li>		
-							<li class="header-dropdown__item">Фридрих</li>		
-							<li class="header-dropdown__item">Леонардо</li>		
-							<li class="header-dropdown__item">Верроккье</li>						
-						</ul>
-					</li>
+              <li class="header-burger-nav-item">
+                <a href="" class="header-burger-nav-item__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-burger-btn-lk">
+            <svg class="header-burger-btn-lk__img" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/></svg>
+            Войти
+          </button>
+        </div>
 
-					<li class="header-bot__item">
-						<span class="header-dropdown__title">Постимпрессиониз</span>	
-						<ul class="header-dropdown header__dropdown">
-							<li class="header-dropdown__item">Тинторетто</li>		
-							<li class="header-dropdown__item">Фридрих</li>		
-							<li class="header-dropdown__item">Леонардо</li>		
-							<li class="header-dropdown__item">Верроккье</li>						
-						</ul>
-					</li>
+        <a href="" class="header-logo">
+          <img src="/img/logo_header.svg" alt="Логотип" class="header-logo__img">
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                О нас
+              </a>
+            </li>
 
-					<li class="header-bot__item">
-							<span class="header-dropdown__title">Авангард</span>	
-							<ul class="header-dropdown header__dropdown">
-							<li class="header-dropdown__item">Тинторетто</li>		
-							<li class="header-dropdown__item">Фридрих</li>		
-							<li class="header-dropdown__item">Леонардо</li>		
-							<li class="header-dropdown__item">Верроккье</li>						
-						</ul>
-					</li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                Галерея
+              </a>
+            </li>
 
-					<li class="header-bot__item">
-						<span class="header-dropdown__title">Футуризм</span>	
-						<ul class="header-dropdown header__dropdown">
-							<li class="header-dropdown__item">Тинторетто</li>		
-							<li class="header-dropdown__item">Фридрих</li>		
-							<li class="header-dropdown__item">Леонардо</li>		
-							<li class="header-dropdown__item">Верроккье</li>						
-						</ul>
-					</li>
-				</ul>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                Каталог
+              </a>
+            </li>
 
-				<div class="header-search">
-					<button class="header-search__btn">
-						<svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
-						</svg>								
-					</button>						
-						<input type="search" class="header-search__input" placeholder="Поиск по сайту">
-				</div>
-			</div>
-		</div>
-	</header>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                События
+              </a>
+            </li>
 
-	<main>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                Издания
+              </a>
+            </li>
 
-	<section class="hero">
-		<div class="container hero-container">
-			<div class="hero-desc">
-				<h2 class="hero-desc__title">Прикоснитесь к прекрасному</h2>
-				<p class="hero-desc__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки дляновых предложений.</p>
-				<button class="hero-desc__btn btn">Подписаться на рассылку</button>
-			</div>
-		</div>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                Проекты
+              </a>
+            </li>
 
-		<div class="swiper-container hero-swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide slide1"></div>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-item__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-				<div class="swiper-slide slide2"></div>
+        <button class="header-btn-lk">
+          <svg class="header-btn-lk__img" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/></svg>
+          Войти
+        </button>
 
-				<div class="swiper-slide slide3"></div>
-			</div>
-		</div>
-	</section>
+        <div class="header-search header-top-search">
+          <button class="header-search-btn header-top-search-btn">
+            <svg class="header-search-btn__img header-top-search-btn__img" width="30" height="29" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/></svg>
+          </button>
+          <input type="text" class="header-search__text header-top-search__text" placeholder="Поиск по сайту">
+        </div>
 
-	<section class="about">
-		<div class="container about__container">
-			<h2 class="about__title title" id="about-us">О нас</h2>
-			<p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждогоучастника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития.Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственныйплан целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификациисовременных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит,должны быть разоблачены.</p>
-		</div>
-	</section>
+        <div class="header-search-open">
+          <button class="header-search-open-btn">
+            <svg class="header-search-open-btn__img" width="30" height="29" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/></svg>
+          </button>
+          <input type="text" class="header-search-open__text">
+          <button class="header-search-open-close header-search-open-close__btn"></button>
+        </div>
 
-	<section id="gallery" class="gallery">
-		<div class="container gallery__container">
-			<div class="gallery-left">
-				<h2 class="gallery-left__title title">Галерея</h2>
-				<div class="gallery-filter">
-					<span class="gallery-filter__text">Фильтровать по:</span>
-					<select name="filter" class="gallery-left__select">
-						<option placeholder value="author">Автор</option>
-						<option value="direction">Направление</option>
-						<option value="technics">Техника</option>
-					</select>
-				</div>
+      </div>
+    </div>
 
-				<p class="gallery__promo">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__promo--link">авторизуйтесь</a> , либо воспользуйтесь лицензией. </p>
-			</div>
+      <div class="header-menu">
+        <div class="container header-menu-container">
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <button class="header-menu-item-link" id="dropbtn1">
+                Реализм
+                <svg id="arrow1" class="header-menu-item-link__img" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 10L0.999997 5" stroke="#fff"/></svg>
+              </button>
+              <div data-simplebar class="header-dropdown" id="droplist1">
+                <ul class="header-dropdown-list">
+                    <li class="header-dropdown-item header-dropdown-item_1">
+                      Тинторетто
+                    </li>
+                    <li class="header-dropdown-item header-dropdown-item_2">
+                      Фридрих
+                    </li>
+                    <li class="header-dropdown-item header-dropdown-item_3">
+                      Леонардо
+                    </li>
+                    <li class="header-dropdown-item header-dropdown-item_4">
+                      Верроккьо
+                    </li>
+                </ul>
+              </div>
+            </li>
 
-			<div class="gallery-right swiper-container gallery__swiper-container">
-				<div class="swiper__navigation-buttons">
-					<div class="swiper-button-prev gallery__button"></div>
-					<div class="swiper-pagination"></div>
-					<div class="swiper-button-next gallery__button"></div>
-				</div>
+            <li class="header-menu-item">
+              <button class="header-menu-item-link" id="dropbtn2">
+                Импрессионизм
+                <svg id="arrow2" class="header-menu-item-link__img" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 10L0.999997 5" stroke="#fff"/></svg>
+              </button>
+              <div data-simplebar class="header-dropdown" id="droplist2">
+                <ul class="header-dropdown-list">
+                  <li class="header-dropdown-item header-dropdown-item_1">
+                    Тинторетто
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_2">
+                    Фридрих
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_3">
+                    Леонардо
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_4">
+                    Верроккьо
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-				<div class="swiper-wrapper">
-					<div class="swiper-slide gallery__slide">
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle70.jpg" alt="">
-						</div>
 
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle69.jpg" alt="">
-						</div>
+            <li class="header-menu-item">
+              <button class="header-menu-item-link" id="dropbtn3">
+                Постимпрессионизм
+                <svg class="header-menu-item-link__img" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 10L0.999997 5" stroke="#fff"/></svg>
+              </button>
+              <div data-simplebar class="header-dropdown" id="droplist3">
+                <ul class="header-dropdown-list">
+                  <li class="header-dropdown-item header-dropdown-item_1">
+                    Тинторетто
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_2">
+                    Фридрих
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_3">
+                    Леонардо
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_4">
+                    Верроккьо
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle68.jpg" alt="">
-						</div>
+            <li class="header-menu-item">
+              <button class="header-menu-item-link" id="dropbtn4">
+                Авангард
+                <svg class="header-menu-item-link__img" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 10L0.999997 5" stroke="#fff"/></svg>
+              </button>
+              <div data-simplebar class="header-dropdown" id="droplist4">
+                <ul class="header-dropdown-list">
+                  <li class="header-dropdown-item header-dropdown-item_1">
+                    Тинторетто
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_2">
+                    Фридрих
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_3">
+                    Леонардо
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_4">
+                    Верроккьо
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle72.png" alt="">
-						</div>
+            <li class="header-menu-item">
+              <button class="header-menu-item-link" id="dropbtn5">
+                Футуризм
+                <svg class="header-menu-item-link__img" width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 10L0.999997 5" stroke="#fff"/></svg>
+              </button>
+              <div data-simplebar class="header-dropdown" id="droplist5">
+                <ul class="header-dropdown-list">
+                  <li class="header-dropdown-item header-dropdown-item_1">
+                    Тинторетто
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_2">
+                    Фридрих
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_3">
+                    Леонардо
+                  </li>
+                  <li class="header-dropdown-item header-dropdown-item_4">
+                    Верроккьо
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
 
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle73.jpg" alt="">
-						</div>
-
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle71.jpg" alt="">
-						</div>
-					</div>
-
-					<div class="swiper-slide gallery__slide">
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle7.jpg" alt="">
-						</div>
-
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle8.png" alt="">
-						
-						</div>
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle9.jpg" alt="">
-						
-						</div>
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle2.jpg" alt="">
-						
-						</div>
-						
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle71.png" alt="">
-						</div>
-						
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle3.jpg" alt="">
-						</div>
-					</div>
-					
-					<div class="swiper-slide gallery__slide">
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle77.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle79.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle78.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle74.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle75.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle76.jpg" alt="">
-					
-						</div>
-					</div>
-					
-					<div class="swiper-slide gallery__slide">
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle87.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle81.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle91.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle89.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle83.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle85.jpg" alt="">
-						</div>
-					</div>
-					
-					<div class="swiper-slide gallery__slide">
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle86.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle80.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle90.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle88.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle82.jpg" alt="">
-						</div>
-					
-						<div class="gslide-img-wrapper">
-							<img src="img/Rectangle84.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	</main>
+          <div class="header-search">
+            <button class="header-search-btn">
+              <svg class="header-search-btn__img" width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/></svg>
+            </button>
+            <input type="text" class="header-search__text" placeholder="Поиск по сайту">
+          </div>
+        </div>
+      </div>
+  </header>
 </body>
 </html>

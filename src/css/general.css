@@ -1,89 +1,85 @@
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
-	url('../fonts/opensans-bold-webfont.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-	url('../fonts/opensans-regular-webfont.woff') format('woff');
+	font-family: 'OpenSans';
+	src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
+			 url('/fonts/opensans-regular-webfont.woff') format('woff');
 	font-weight: 400;
-	font-style: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
-	url('../fonts/opensans-semibold-webfont.woff') format('woff');
+	font-family: 'OpenSans';
+	src: url('/fonts/opensans-bold-webfont.woff2') format('woff2'),
+			 url('/fonts/opensans-bold-webfont.woff') format('woff');
+	font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('/fonts/opensans-semibold-webfont.woff2') format('woff2'),
+			 url('/fonts/opensans-semibold-webfont.woff') format('woff');
 	font-weight: 600;
-	font-style: normal;
+  font-style: normal;
 }
 
 * {
-	box-sizing: border-box;
-}
-
-img {
-	max-width: 100%;
-}
-
-h1,h2,h3,h4,h5 {
-	padding: 0;
-	margin: 0;
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-
-button, input {
-	background-color: transparent;
-	line-height: 1;
-	border: none;
-	cursor: pointer;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 16px;
-	line-height: 32px;
-	font-weight: 400;
-	color: var(--black-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: inherit;
 }
 
 .container {
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	max-width: 1630px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  max-width: 1700px;
 }
 
-.title {
-	font-size: 48px;
-	line-height: 1;
-	font-weight: 400;
+@media (max-width: 540px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-.btn {
-	padding: 17px 35px;
-	font-size: 18px;
-	line-height: 1;
-	font-weight: 700;
-	color: var(--white-color);
-	border: 3px solid var(--amethyst-color);
-	border-radius: 100px;
-	background-color: var(--amethyst-color);
+.simplebar-content-wrapper {
+  overflow: auto;
 }
-
-:focus {outline:none;}
-

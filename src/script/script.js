@@ -1,66 +1,41 @@
-let mySwiper = new Swiper('.swiper-container', {
-	loop: true,
+// Функция открытия и закрытия строки поиска
+
+document.querySelector('.header-top-search-btn').addEventListener('click', function() {
+  document.querySelector('.header-search-open').classList.add('is-open_flex');
 });
 
-let gallerySwiper = new Swiper('.gallery__swiper-container', {
-	loop: true,
-  navigation: {
-	 nextEl: '.swiper-button-next',
-	 prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-	 el: '.swiper-pagination',
-	 type: 'fraction',
-	},
+document.querySelector('.header-search-open-close__btn').addEventListener('click', function() {
+  document.querySelector('.header-search-open').classList.remove('is-open_flex');
 });
 
-const element = document.querySelector('.gallery-left__select');
-const choices = new Choices(element, {
-	searchEnabled: false,
-	itemSelectText: '',
+// Функция открытия и закрытия меню бургер
+
+document.querySelector('.header-burger').addEventListener('click', function() {
+  document.querySelector('.header-burger-menu').classList.add('is-open_block');
 });
 
-/* Заливка иконки поиска*/
+document.querySelector('.header-burger-menu-close').addEventListener('click', function() {
+  document.querySelector('.header-burger-menu').classList.remove('is-open_block');
+});
 
-const rect = document.querySelector('.header-search__btn svg rect');
-const path = document.querySelector('.header-search__btn svg path');
-const input = document.querySelector('.header-search__input');
+// Выпадающий список
 
-input.onfocus = function() {
-	rect.classList.add('header-search__bth--fill');
-	path.classList.add('header-search__bth--fill')
-}
+document.querySelector('#dropbtn1').addEventListener('click', function() {
+  document.querySelector('#droplist1').classList.toggle('is-open_block');
+});
 
-input.onblur = function() {
-	rect.classList.remove('header-search__bth--fill');
-	path.classList.remove('header-search__bth--fill')
-}
+document.querySelector('#dropbtn2').addEventListener('click', function() {
+  document.querySelector('#droplist2').classList.toggle('is-open_block');
+});
 
-/* Header выпадающий список*/
+document.querySelector('#dropbtn3').addEventListener('click', function() {
+  document.querySelector('#droplist3').classList.toggle('is-open_block');
+});
 
-let el = document.getElementsByClassName('header-bot__item');
+document.querySelector('#dropbtn4').addEventListener('click', function() {
+  document.querySelector('#droplist4').classList.toggle('is-open_block');
+});
 
-for (let i = 0; i < el.length; i++) {
-	el[i].addEventListener('mouseenter', showList, false)
-	el[i].addEventListener('mouseleave', hideList, false)
-}
-
-function showList() {
-	this.children[0].classList.add('show--title');
-	this.children[0].classList.add('after');
-	if(this.children.length > 1) {
-		this.children[1].classList.add('show--list');
-	} else {
-		return false;
-	}
-};
-
-function hideList() {
-	this.children[0].classList.remove('show--title');
-	this.children[0].classList.remove('after');
-	if(this.children.length > 1) {
-		this.children[1].classList.remove('show--list');
-	} else {
-		return false;
-	}
-};
+document.querySelector('#dropbtn5').addEventListener('click', function() {
+  document.querySelector('#droplist5').classList.toggle('is-open_block');
+});

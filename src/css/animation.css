@@ -1,9 +1,0 @@
-@keyframes bgzoom {
-	0% {
-		background-size: 105% 105%;
-	}
-
-	100% {
-		background-size: 100% 100%;
-	}
-}
