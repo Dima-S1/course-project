@@ -63,7 +63,6 @@
 
 .header-nav-item-link {
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .header-nav-item-link__dekstop {
@@ -107,7 +106,7 @@
 
 .header-menu {
   padding-top: 20px;
-  padding-bottom: 17px;
+  padding-bottom: 19px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -215,7 +214,7 @@
   padding: 40px;
   display: none;
   position: absolute;
-  top: 50px;
+  top: 51px;
   width: 300px;
   height: 300px;
   background: rgba(0, 0, 0, 0.4);
@@ -438,7 +437,7 @@
 
 /* MEDIA */
 
-@media(max-width: 1124px) {
+@media(max-width: 1187px) {
 
   .header-top-container {
     padding-bottom: 16px;
