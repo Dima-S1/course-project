@@ -11,11 +11,11 @@ document.querySelector('.header-search-open-close__btn').addEventListener('click
 // Функция открытия и закрытия меню бургер
 
 document.querySelector('.header-burger').addEventListener('click', function() {
-  document.querySelector('.header-nav_burger').classList.add('is-open_block');
+  document.querySelector('.header-nav__tablet').classList.add('is-open_block');
 });
 
-document.querySelector('.header-search-nav-close__btn_burger').addEventListener('click', function() {
-  document.querySelector('.header-nav_burger').classList.remove('is-open_block');
+document.querySelector('.header-search-nav-close__btn__tablet').addEventListener('click', function() {
+  document.querySelector('.header-nav__tablet').classList.remove('is-open_block');
 });
 
 // Выпадающий список
