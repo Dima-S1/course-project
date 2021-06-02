@@ -1,0 +1,20 @@
+.about__text {
+  width: 67.5%;
+}
+
+@media(max-width: 1187px) {
+  .about__text {
+    width: 100%;
+  }
+}
+
+@media(max-width: 540px) {
+  .about__heading {
+    margin-bottom: 14px;
+  }
+
+  .about__text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

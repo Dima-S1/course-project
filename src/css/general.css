@@ -27,10 +27,12 @@
 }
 
 body {
+  position: relative;
   font-family: 'OpenSans', sans-serif;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
+  color: #333;
 }
 
 a {
@@ -66,6 +68,15 @@ input {
   background-color: inherit;
 }
 
+h1,h2,h3,h4 {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
 .container {
   padding-left: 50px;
   padding-right: 50px;
@@ -73,10 +84,21 @@ input {
   max-width: 1700px;
 }
 
+.section-heading {
+  margin-left: -3px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
 @media (max-width: 540px) {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .section-heading {
+    font-size: 28px;
   }
 }
 

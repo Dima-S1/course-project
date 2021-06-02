@@ -1,0 +1,11 @@
+@keyframes bgz {
+  from {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 105%;
+  }
+  to {
+    background-size: 100%;
+  }
+}

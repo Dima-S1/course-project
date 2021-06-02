@@ -1,0 +1,138 @@
+.hero {
+  margin-bottom: 99px;
+  width: 100%;
+  background-image: url(/img/hero_img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  color: #fff;
+  z-index: -1;
+  animation: bgz 15s infinite ease-in-out;
+}
+
+.hero-desc {
+  padding-top: 243px;
+  padding-bottom: 140px;
+  width: 37%;
+}
+
+.hero-desc__title {
+  margin-left: -6px;
+  margin-bottom: 0;
+  font-size: 72px;
+  line-height: 82.8px;
+}
+
+.hero-desc__text {
+  margin-bottom: 110px;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.hero-desc__subcribe {
+  overflow: hidden;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #9D5CD0;
+  border: 3px solid #9D5CD0;
+  outline: none;
+  border-radius: 100px;
+  transition: border 0.3s, outline 0.3s, background-color 0.3s;
+}
+
+/* FOCUS */
+
+.hero-desc__subcribe:focus {
+  border: 3px solid #C283F3;
+}
+
+/* HOVER */
+
+.hero-desc__subcribe:hover {
+  border: 3px solid #D1A9F0;
+}
+
+/* ACTIVE */
+
+.hero-desc__subcribe:active {
+  background-color: #7943A4;
+  border: 3px solid #D1A9F0;
+}
+
+
+@media(max-width: 1187px) {
+  .hero {
+    background-image: url(/img/hero1024.jpg);
+  }
+
+  .hero-desc {
+    padding-top: 215px;
+    padding-bottom: 133px;
+    width: 71%;
+  }
+
+  .hero-desc__title {
+    margin-bottom: -7px;
+    width: 88%;
+  }
+
+  .hero-desc__text {
+    margin-bottom: 151px;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .hero {
+    background-image: url(/img/hero768.jpg);
+  }
+
+  .hero-desc {
+    padding-top: 215px;
+    padding-bottom: 132px;
+    width: 100%;
+  }
+
+  .hero-desc__title {
+    margin-bottom: -7px;
+    width: 88%;
+  }
+
+}
+
+@media(max-width: 540px) {
+  .hero {
+    margin-bottom: 54px;
+  }
+
+  .hero-desc {
+    padding-top: 77px;
+    padding-bottom: 49px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .hero-desc__title {
+    margin-left: 0;
+    margin-bottom: -3px;
+    font-size: 32px;
+    line-height: 39px;
+    width: 100%;
+  }
+
+  .hero-desc__text {
+    margin-bottom: 44px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .hero-desc__subcribe {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
