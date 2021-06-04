@@ -85,10 +85,22 @@ section {
 }
 
 .section-heading {
-  margin-left: -3px;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 400;
+}
+
+.js-focus-visible:focus:not(.focus-visible) {
+ background-color: inherit;
+ color: #9D5CD0;
+}
+
+.js-focus-visible:focus:not(.focus-visible) .header-menu-item-link__img {
+  transform: rotateX(180deg) translateY(-3px);
+}
+
+.js-focus-visible:focus:not(.focus-visible) .header-menu-item-link__img path {
+  stroke: #9D5CD0;
 }
 
 @media (max-width: 540px) {

@@ -20,7 +20,7 @@ document.querySelector('.header-search-nav-close__btn__tablet').addEventListener
 
 // Выпадающий список
 
-const button = document.querySelectorAll('.header-menu-item-link');
+const button = document.querySelectorAll('.header-menu-item');
 const drop = document.querySelectorAll('.header-dropdown');
 
 button.forEach(el => {
@@ -35,26 +35,3 @@ document.addEventListener('click', (e) => {
     drop.forEach(el => {el.classList.remove(('is-open_block'))})
   }
 });
-
-
-
-
-// document.querySelector('#dropbtn1').addEventListener('click', function() {
-//   document.querySelector('#droplist1').classList.toggle('is-open_block');
-// });
-
-// document.querySelector('#dropbtn2').addEventListener('click', function() {
-//   document.querySelector('#droplist2').classList.toggle('is-open_block');
-// });
-
-// document.querySelector('#dropbtn3').addEventListener('click', function() {
-//   document.querySelector('#droplist3').classList.toggle('is-open_block');
-// });
-
-// document.querySelector('#dropbtn4').addEventListener('click', function() {
-//   document.querySelector('#droplist4').classList.toggle('is-open_block');
-// });
-
-// document.querySelector('#dropbtn5').addEventListener('click', function() {
-//   document.querySelector('#droplist5').classList.toggle('is-open_block');
-// });
