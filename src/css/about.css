@@ -1,14 +1,37 @@
+.about {
+  padding-top: 95px;
+}
+
 .about__text {
   width: 67.5%;
 }
 
 @media(max-width: 1187px) {
+  .about {
+    padding-top: 97px;
+  }
+
+  .about__heading {
+    margin-bottom: 32px;
+  }
+
   .about__text {
     width: 100%;
   }
 }
 
+
+@media(max-width: 768px) {
+  .about__heading {
+    margin-bottom: 33px;
+  }
+}
+
 @media(max-width: 540px) {
+  .about {
+    padding-top: 54px;
+  }
+
   .about__heading {
     margin-bottom: 14px;
   }

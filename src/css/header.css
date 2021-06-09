@@ -251,19 +251,19 @@
 }
 
 .header-dropdown-item_1 {
-  background-image: url(/img/option1.png);
+  background-image: url(../img/option1.png);
 }
 
 .header-dropdown-item_2 {
-  background-image: url(/img/option2.png);
+  background-image: url(../img/option2.png);
 }
 
 .header-dropdown-item_3 {
-  background-image: url(/img/option3.png);
+  background-image: url(../img/option3.png);
 }
 
 .header-dropdown-item_4 {
-  background-image: url(/img/option4.png);
+  background-image: url(../img/option4.png);
 }
 
 .header-dropdown-item:not(:last-child) {
