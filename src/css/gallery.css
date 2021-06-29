@@ -1,0 +1,246 @@
+.gallery {
+  padding-top: 97px;
+  padding-bottom: 80px;
+  background-image: url(../img/background_gallery.jpg);
+  color: #fff;
+}
+
+.container-gallery {
+  display: flex;
+}
+
+.gallery-desc {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+}
+
+.gallery-desc__heading {
+  margin-bottom: 33px;
+}
+
+.gallery-desc-select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.gallery-desc-select__heading {
+  margin-bottom: 10px;
+}
+
+.gallery-desc__text {
+  width: 90%;
+  transform: translateY(10px);
+}
+
+.gallery-desc__link {
+  color: #9D5CD0;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Селект */
+
+.choices__inner {
+  padding: 0;
+  min-height: unset;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 6px;
+  background-color: inherit;
+  transition: background-color 0.3s;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0;
+}
+
+.choices__list--single {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+}
+
+.choices[data-type*=select-one]:after {
+  content: '';
+  margin-top: -5px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.choices[data-type*=select-one].is-open:after {
+  margin-top: -3px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-135deg);
+}
+
+.choices__list--dropdown {
+  background-color: inherit;
+  border: 1px solid #999;
+}
+
+.choices__list--dropdown .choices__item {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #999999;
+  line-height: 1;
+}
+
+.choices__list--dropdown .is-selected{
+  display: none;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: inherit;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-radius: 6px 6px 6px 6px;
+  border-color: #fff;
+}
+
+.is-open .choices__list--dropdown {
+  border-color: #999;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.choices__list--dropdown .choices__item {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.choices__list--dropdown .choices__item:not(:last-child) {
+  border-bottom: 1px solid #999;
+}
+
+
+/* Свайпер */
+
+.swiper-navigation {
+  padding-top: 9px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.swiper-pagination {
+  position: static;
+  width: unset;
+  font-size: 16px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  width: 30px;
+  height: 30px;
+  margin-top: 0;
+  color: #fff;
+  border: 2px solid #666;
+  border-radius: 100%;
+  background-color: #666;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.swiper-button-prev {
+  margin-right: 21px;
+}
+
+.swiper-button-next {
+  margin-left: 21px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 12px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 750px;
+}
+
+.swiper-slid__img {
+  position: relative;
+  cursor: pointer;
+}
+
+.swiper-slid__img::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  left: 25px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slid__img:nth-child(1),
+.swiper-slid__img:nth-child(2),
+.swiper-slid__img:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+/* FOCUS */
+
+.choices__inner:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-desc__link:focus {
+  background-color: #9D5CD0;
+  color: #fff;
+  outline: none;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  border: 2px solid #000;
+}
+
+.swiper-slid__img:focus {
+  outline: 3px solid #7943A4;
+}
+/* HOVER */
+
+.choices__inner:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.choices__list--dropdown .choices__item:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-desc__link:hover {
+  border-bottom: 1px solid #9D5CD0;
+  color: #9D5CD0;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #9D5CD0;
+  border: 2px solid #9D5CD0;
+}
+
+/* ACTIVE */
+
+.gallery-desc__link:active {
+  color: #7943A4;
+  border-bottom: 1px solid #7943A4;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  background-color: #7943A4;
+  border: 2px solid #000;
+}

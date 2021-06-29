@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <!-- <link rel="stylesheet" href="/css/animate.css"> -->
   <link rel="stylesheet" href="css/simplebar.min.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="libs/focus-visible.js"></script>
   <script defer src="libs/simplebar.js"></script>
+  <script defer src="libs/choices.min.js"></script>
+  <script defer src="libs/swiper.min.js"></script>
   <script defer src="script/script.js"></script>
 </head>
 <body>
@@ -274,7 +278,7 @@
           <h2 class="hero-desc__title">
             Прикоснитесь к прекрасному
           </h2>
-          <p class="hero-desc__text">
+          <p class="hero-desc__text text">
             Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
           </p>
           <a href="" class="hero-desc__subcribe">
@@ -289,9 +293,85 @@
         <h2 class="section-heading about__heading">
           О нас
         </h2>
-        <p class="about__text">
+        <p class="about__text text">
           Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
         </p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container container-gallery">
+        <div class="gallery-desc">
+          <h2 class="gallery-desc__heading section-heading">
+            Галерея
+          </h2>
+
+          <div class="gallery-desc-select">
+            <span class="gallery-desc-select__heading">
+              Фильтр:
+            </span>
+            <select name="gallery" id="" class="gallery-desc-select-select js-choice">
+              <option value="value1" class="gallery-desc-select__option">
+                Живопись
+              </option>
+              <option value="value2" class="gallery-desc-select__option">
+                Рисунок
+              </option>
+              <option value="value3" class="gallery-desc-select__option">
+                Скульптура
+              </option>
+            </select>
+          </div>
+
+          <p class="gallery-desc__text text">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="gallery-desc__link">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+          </p>
+        </div>
+
+        <div class="gallery-swiper swiper-container">
+          <div class="swiper-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+              <img src="img/gallery1.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery2.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery3.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery4.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery5.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery6.jpg" alt="" class="swiper-slid__img">
+            </div>
+
+            <div class="swiper-slide slide2">
+              <img src="img/gallery21.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery22.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery23.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery24.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery25.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery26.jpg" alt="" class="swiper-slid__img">
+            </div>
+
+            <div class="swiper-slide slide3">
+              <img src="img/gallery31.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery32.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery33.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery34.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery35.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery36.jpg" alt="" class="swiper-slid__img">
+            </div>
+
+            <div class="swiper-slide slide4">
+              <img src="img/gallery41.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery42.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery43.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery44.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery45.jpg" alt="" class="swiper-slid__img">
+              <img src="img/gallery46.jpg" alt="" class="swiper-slid__img">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

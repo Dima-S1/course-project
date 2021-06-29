@@ -35,3 +35,32 @@ document.addEventListener('click', (e) => {
     drop.forEach(el => {el.classList.remove(('is-open_block'))})
   }
 });
+
+// Селект
+
+const element = document.querySelector('.js-choice');
+const choices = new Choices(element, {
+  searchEnabled: false,
+  itemSelectText: '',
+  duplicateItemsAllowed: false,
+});
+
+
+// Свайпер
+
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});

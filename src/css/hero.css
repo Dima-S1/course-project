@@ -16,6 +16,8 @@
 }
 
 .hero-desc__title {
+  padding: 0;
+  margin: 0;
   margin-bottom: 20px;
   font-size: 72px;
   line-height: 82.8px;

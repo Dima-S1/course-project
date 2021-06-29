@@ -1,5 +1,6 @@
 .about {
   padding-top: 95px;
+  padding-bottom: 71px;
 }
 
 .about__text {
@@ -30,6 +31,7 @@
 @media(max-width: 540px) {
   .about {
     padding-top: 54px;
+    padding-bottom: 50px;
   }
 
   .about__heading {
