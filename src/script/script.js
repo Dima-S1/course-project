@@ -52,6 +52,61 @@ const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  spaceBetween: 50,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+const swiperTablet = new Swiper('.swiper-container-tablet', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 50,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+const swiper768 = new Swiper('.swiper-container-768', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 50,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+const swiperMobile = new Swiper('.swiper-container-mobile', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 50,
 
   pagination: {
     el: '.swiper-pagination',
