@@ -1,6 +1,10 @@
 .about {
   padding-top: 95px;
-  padding-bottom: 71px;
+  padding-bottom: 70px;
+}
+
+.about__heading {
+  margin-bottom: 33px;
 }
 
 .about__text {
