@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 80px;
+  padding-top: 81px;
 }
 
 .catalog-top {
@@ -8,7 +8,6 @@
 
 .catalog-heading {
   margin-right: 30px;
-  margin-bottom: 32px;
   padding-top: 16px;
 }
 
@@ -57,6 +56,7 @@
 .tab-content {
   display: none;
   margin-bottom: 39px;
+  padding-top: 4px;
 }
 
 .tab-content-active {
@@ -83,7 +83,7 @@
 }
 
 .catalog-artist-desc-img {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .catalog-artist-desc__name {
@@ -93,7 +93,7 @@
 }
 
 .catalog-artist-desc__date {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-size: 12px;
   line-height: 1;
   color: #999;
@@ -109,15 +109,19 @@
 }
 
 .catalog-accordion__heading {
-  padding-top: 42px;
-  padding-bottom: 47px;
+  padding-top: 43px;
+  padding-bottom: 46px;
   position: relative;
+  display: inline-block;
   width: 100%;
   font-size: 24px;
   line-height: 1;
   border-top: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
   transition: all 0.3s;
+}
+
+.catalog-accordion__heading:last-child {
+  border-bottom: 1px solid #CACACA;
 }
 
 .catalog-accordion__heading::after {
@@ -138,21 +142,19 @@
 
 .catalog-artist-list {
   padding-top: 26px;
-  padding-bottom: 30px;
-  max-height: 350px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: start;
+  padding-bottom: 61px;
+  columns: 3 196px;
 }
-
-
 
 .catalog-artist-item__btn {
   display: inline-block;
   position: relative;
-  width: 100%;
+  text-align: left;
   transition: all 0.3s;
+}
+
+.artist-btn__active {
+  color: #9D5CD0;
 }
 
 .catalog-artist-item__btn::after {
@@ -206,6 +208,7 @@
 .ui-accordion-header-active {
   color: #7943A4;
   border-color: #7943A4;
+  border-bottom: 1px solid #7943A4;
 }
 
 .ui-accordion-header-active::after {
@@ -238,19 +241,29 @@
   }
 
   .catalog-accordion__heading {
-    padding-top: 41px;
+    padding-top: 43px;
+  }
+
+  .tab-content {
+    margin-bottom: 40px;
   }
 
   .tab-content__text {
-  width: 100%;
-}
+    width: 100%;
+  }
 
- .catalog-artist-list {
-  max-height: 450px;
- }
+  .catalog-artist-list {
+    padding-bottom: 28px;
+  }
+
 }
 
 @media (max-width: 768px) {
+
+  .catalog-top {
+    margin-bottom: 9px;
+  }
+
   .catalog-tabs-list {
     padding-top: 0;
   }
@@ -267,9 +280,13 @@
     order: 2;
   }
 
+  .catalog-accordion__heading {
+    padding-top: 44px;
+  }
+
   .catalog-artist-right {
     order: 1;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     width: 100%;
   }
 
@@ -278,7 +295,7 @@
   }
 
   .catalog-artist-list {
-    max-height: 350px;
+    padding-bottom: 58px;
   }
 
   .catalog-artist-left {
@@ -289,7 +306,7 @@
 
 @media (max-width: 540px) {
   .catalog {
-    padding-top: 68px;
+    padding-top: 36px;
   }
 
   .catalog-heading {
@@ -342,6 +359,10 @@
     max-height: initial;
   }
 
+  .catalog-artist-right {
+    margin-bottom: 53px;
+  }
+
   .catalog-artist-desc-img {
     margin-bottom: 11px;
   }
@@ -370,7 +391,7 @@
 }
 
 .catalog-artist-item__btn:focus {
-  background-color: #D1A9F0;
+  background-color: #7943A4;
   color: #fff;
 }
 

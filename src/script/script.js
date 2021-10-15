@@ -48,7 +48,7 @@ const choices = new Choices(element, {
 
 // Свайпер
 
-const swiper = new Swiper('.swiper-container', {
+const swiperDesktop = new Swiper('.swiper-container-desktop', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -149,4 +149,32 @@ document.querySelectorAll('.catalog-artist-item__btn').forEach(function(artistBt
 
 $( function() {
   $( "#accordion" ).accordion();
-} );
+});
+
+
+// Выпадающие события
+
+document.querySelector('.developments__btn').addEventListener('click', function() {
+  document.querySelector('.developments-list--hidden').classList.toggle('developments-list--hidden');
+  document.querySelector('.developments__btn').classList.add('developments__btn--hidden');
+})
+
+
+document.querySelector('.developments__btn').addEventListener('click', function() {
+  document.querySelector('.developments-list-768--hidden').classList.toggle('developments-list-768--hidden');
+  document.querySelector('.developments__btn').classList.add('developments__btn--hidden');
+})
+
+// Свайпер СОБЫТИЯ
+
+const swiperDevelopments = new Swiper('.developments-list-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 27,
+
+  pagination: {
+    el: '.swiper-pagination-developments',
+    type: 'bullets',
+  }
+});

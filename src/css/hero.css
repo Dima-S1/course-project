@@ -11,7 +11,7 @@
 
 .hero-desc {
   padding-top: 243px;
-  padding-bottom: 112px;
+  padding-bottom: 113px;
   width: 37%;
 }
 
@@ -26,7 +26,7 @@
 .hero-desc__text {
   margin-bottom: 90px;
   font-size: 18px;
-  line-height: 31px;
+  line-height: 30px;
 }
 
 .hero-desc__subcribe {
@@ -80,7 +80,7 @@
   }
 
   .hero-desc__text {
-    margin-bottom: 132px;
+    margin-bottom: 134px;
   }
 }
 
@@ -92,7 +92,7 @@
 
   .hero-desc {
     padding-top: 215px;
-    padding-bottom: 104px;
+    padding-bottom: 105 px;
     width: 100%;
   }
 
