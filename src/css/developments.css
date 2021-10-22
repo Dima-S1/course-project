@@ -89,8 +89,8 @@
 .developments-item__link {
   padding: 5px;
   position: absolute;
-  bottom: 42px;
-  left: 49px;
+  bottom: 38px;
+  left: 44px;
   line-height: 25px;
   color: #9D5CD0;
   transition: background-color 0.3s, color 0.3s;

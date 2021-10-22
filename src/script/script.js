@@ -123,12 +123,17 @@ const swiperMobile = new Swiper('.swiper-container-mobile', {
 
 // ТАБЫ
 // Переключатель языка
-document.querySelectorAll('.catalog-tabs-item__btn').forEach(function(tabsBtn) {
+document.querySelectorAll('.catalog-tabs-item-btn').forEach(function(tabsBtn) {
   tabsBtn.addEventListener('click', function(event) {
     const path = event.currentTarget.dataset.path
+    const target = event.currentTarget.dataset.target
     document.querySelectorAll('.tab-content').forEach(function(tabContent) {
       tabContent.classList.remove('tab-content-active')
     })
+    document.querySelectorAll('.catalog-tabs-item-btn').forEach(function(btn){
+      btn.classList.remove('catalog-tabs-item-btn--active')
+    });
+    event.currentTarget.classList.add('catalog-tabs-item-btn--active');
     document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
   })
 })
@@ -138,9 +143,14 @@ document.querySelectorAll('.catalog-tabs-item__btn').forEach(function(tabsBtn) {
 document.querySelectorAll('.catalog-artist-item__btn').forEach(function(artistBtn) {
   artistBtn.addEventListener('click', function(event) {
     const target = event.currentTarget.dataset.target
+    const contant = event.currentTarget.dataset.contant;
     document.querySelectorAll('.catalog-artist-desc').forEach(function(artistContent) {
       artistContent.classList.remove('artist-active')
     })
+    document.querySelectorAll('.catalog-artist-item__btn').forEach(function(btn){
+      btn.classList.remove('artist-btn__active')
+    });
+    event.currentTarget.classList.add('artist-btn__active');
     document.querySelector(`[data-content="${target}"]`).classList.add('artist-active')
   })
 })
