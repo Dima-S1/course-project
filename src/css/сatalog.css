@@ -12,7 +12,7 @@
 }
 
 .catalog-tabs-list {
-  margin-top: 2px;
+  margin-top: 1px;
   display: flex;
 }
 
@@ -21,7 +21,10 @@
 }
 
 .catalog-tabs-item-btn {
-  padding: 5px;
+  padding-top: 6px;
+  padding-right: 5px;
+  padding-bottom: 4px;
+  padding-left: 5px;
   width: 66px;
   height: 66px;
   transition: filter 0.3s, border 0.3s;
@@ -38,7 +41,7 @@
 
 .tab-content {
   display: none;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   padding-top: 9px;
 }
 
@@ -92,19 +95,28 @@
 }
 
 .catalog-accordion__heading {
-  padding-top: 43px;
-  padding-bottom: 46px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   position: relative;
   display: inline-block;
   width: 100%;
   font-size: 24px;
   line-height: 1;
-  border-top: 1px solid #CACACA;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
   transition: all 0.3s;
 }
 
-.catalog-accordion__heading:last-child {
-  border-bottom: 1px solid #CACACA;
+.catalog-accordion__heading {
+  margin-top: -1px;
+}
+
+.catalog-accordion__heading:first-child {
+  border-top: 1px solid #CACACA;
+}
+
+.catalog-accordion__heading:first-child.ui-accordion-header-active {
+  border-top: 1px solid #7943A4;
 }
 
 .catalog-accordion__heading::after {
@@ -125,7 +137,7 @@
 
 .catalog-artist-list {
   padding-top: 26px;
-  padding-bottom: 61px;
+  padding-bottom: 56px;
   columns: 3 196px;
 }
 
@@ -134,6 +146,11 @@
   position: relative;
   text-align: left;
   transition: all 0.3s;
+}
+
+.catalog-artist-desc__link {
+  font-weight: 600;
+  color: #9D5CD0;
 }
 
 .artist-btn__active {
@@ -167,9 +184,9 @@
 }
 
 .catalog-accordion-desc {
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
-  align-items: center;
-  height: 100%;
 }
 
 .catalog-accordion-desc-text {
@@ -188,10 +205,14 @@
   line-height: 21.79px;
 }
 
+.catalog-accordion-desc-text__link {
+  font-weight: 600;
+  color: #9D5CD0;
+}
+
 .ui-accordion-header-active {
   color: #7943A4;
   border-color: #7943A4;
-  border-bottom: 1px solid #7943A4;
 }
 
 .ui-accordion-header-active::after {

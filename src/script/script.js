@@ -158,7 +158,9 @@ document.querySelectorAll('.catalog-artist-item__btn').forEach(function(artistBt
 // АККОРДИОН
 
 $( function() {
-  $( "#accordion" ).accordion();
+  $( "#accordion" ).accordion({
+    heightStyle: "content"
+  });
 });
 
 
@@ -188,3 +190,22 @@ const swiperDevelopments = new Swiper('.developments-list-swiper', {
     type: 'bullets',
   }
 });
+
+// Свайпер ИЗДАНИЯ
+
+const swiperEdition = new Swiper('.edition-swiper', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 50,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})
