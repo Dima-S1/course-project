@@ -793,68 +793,43 @@
           </h2>
           <ul class="catalog-tabs-list">
             <li class="catalog-tabs-item">
-              <button class="catalog-tabs-item-btn" data-path="one">
+              <button class="catalog-tabs-item-btn" data-target="fr">
                 <img src="img/fr.jpg" class="catalog-tabs-item-btn__img" alt="">
               </button>
             </li>
             <li class="catalog-tabs-item">
-              <button class="catalog-tabs-item-btn" data-path="two">
+              <button class="catalog-tabs-item-btn" data-target="ger">
                 <img src="img/ger.jpg" class="catalog-tabs-item-btn__img" alt="">
               </button>
             </li>
             <li class="catalog-tabs-item">
-              <button class="catalog-tabs-item-btn catalog-tabs-item-btn--active" data-path="three">
+              <button class="catalog-tabs-item-btn catalog-tabs-item-btn--active" data-target="ita">
                 <img src="img/ita.jpg" class="catalog-tabs-item-btn__img" alt="">
               </button>
             </li>
             <li class="catalog-tabs-item">
-              <button class="catalog-tabs-item-btn" data-path="four">
+              <button class="catalog-tabs-item-btn" data-target="rus">
                 <img src="img/rus.jpg" class="catalog-tabs-item-btn__img" alt="">
               </button>
             </li>
             <li class="catalog-tabs-item">
-              <button class="catalog-tabs-item-btn" data-path="five">
+              <button class="catalog-tabs-item-btn" data-target="esp">
                 <img src="img/esp.jpg" class="catalog-tabs-item-btn__img" alt="">
               </button>
             </li>
           </ul>
         </div>
 
-        <div class="tab-content" data-target="one">
-          <p class="tab-content__text">
-            Les actionnaires des plus grandes entreprises, qui représentent un exemple frappant du type de culture politique de l'Europe continentale, seront déclarés violer les normes universelles d'éthique et de morale. En tant que partie seulement du tableau d'ensemble, cherchant à supplanter la fabrication traditionnelle, la nanotechnologie reste le lot des libéraux à ce jour, qui sont désireux d'être fonctionnellement dispersés en éléments indépendants.
-          </p>
-        </div>
-        <div class="tab-content" data-target="two">
-          <p class="tab-content__text">
-            Den Aktionären der größten Unternehmen, die ein anschauliches Beispiel für die kontinentaleuropäische politische Kultur darstellen, wird erklärt, dass sie gegen die universellen Normen der Ethik und Moral verstoßen. Als nur ein Teil des großen Ganzen, der die traditionelle Fertigung zu ersetzen sucht, bleibt die Nanotechnologie bis heute das Los der Liberalen, die bestrebt sind, funktional in unabhängige Elemente aufgeteilt zu werden.
-          </p>
-        </div>
-        <div class="tab-content" data-target="three">
-          <p class="tab-content__text">
-            Gli azionisti delle maggiori società, che rappresentano un vivido esempio della cultura politica di tipo continentale europeo, saranno dichiarati violatori delle norme universali di etica e morale. Essendo solo una parte del quadro generale, che cerca di soppiantare la produzione tradizionale, la nanotecnologia rimane il destino dei liberali fino ad oggi, desiderosi di essere funzionalmente dispersi in elementi indipendenti.
-          </p>
-        </div>
-        <div class="tab-content tab-content-active" data-target="four">
-          <p class="tab-content__text">
+        <div class="catalog-desc">
+          <p class="catalog-desc__text">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
-          </p>
-        </div>
-        <div class="tab-content" data-target="five">
-          <p class="tab-content__text">
-            Los accionistas de las mayores empresas, que representan un vivo ejemplo del tipo de cultura política de la Europa continental, serán declarados violadores de las normas universales de ética y moralidad. Como solo una parte del panorama general, que busca suplantar la fabricación tradicional, la nanotecnología sigue siendo la suerte de los liberales hasta el día de hoy, que están ansiosos por dispersarse funcionalmente en elementos independientes.
           </p>
         </div>
 
         <div class="catalog-artist">
           <div class="catalog-artist-left">
             <div class="catalog-artist-desc artist-active" data-content="domeniko">
-              <picture class="catalog-artist-desc-img">
-                <!-- <source srcset="img/dominiko-tablet-min.jpg" media="(max-width: 1580px)">
-                <source srcset="img/dominiko-768-min.jpg" media="(max-width: 768px)">
-                <source srcset="img/dominiko-mobile-min.jpg" media="(max-width: 540px)"> -->
-                <img src="img/domeniko-min.jpg" alt="">
-              </picture>
+              <img src="img/domeniko-min.jpg" alt="" class="catalog-artist-desc-img">
               <b class="catalog-artist-desc__name">
                 Доменико Гирландайо
               </b>
@@ -886,127 +861,127 @@
           </div>
 
           <div class="catalog-artist-right">
-            <div id="accordion">
+            <div id="accordion-ita" class="tab-content tab-content--active" data-path="ita">
               <b class="catalog-accordion__heading">C 1400 по 1499 гг.</b>
               <div>
                 <ul class="catalog-artist-list">
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Бенедетто ди Биндо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Бергоньоне, Амброджо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Биссоло, Франческо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Больтраффио, Джованни
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Бонсиньори, Франческо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Боттичини, Рафаэлло
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Брамантино
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Бреа, Людовико
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Бьяджо д’Антонио Туччи
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Веккьетта
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Андреа Верроккьо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn artist-btn__active" data-target="domeniko">
+                    <button class="catalog-artist-item__btn artist-btn__active" data-btn="domeniko">
                       Доменико Гирландайо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Беноццо Гоццоли
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Граначчи, Франческо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Грегорио ди Чекко
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Джованни да Удине
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Джованни ди Паоло
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Джорджоне
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Парентино, Бернардо
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Пезеллино
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Пьетро Перуджино
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Перуцци, Бальдассаре
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Пизанелло
                     </button>
                   </li>
                   <li class="catalog-artist-item">
-                    <button class="catalog-artist-item__btn" data-target="noname">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
                       Пинтуриккьо
                     </button>
                   </li>
@@ -1145,6 +1120,671 @@
                 </div>
               </div>
             </div>
+
+            <div id="accordion-fr" class="tab-content" data-path="fr">
+              <b class="catalog-accordion__heading">C 1400 по 1499 гг.</b>
+              <div>
+                <ul class="catalog-artist-list">
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Жак Иверни
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Ангерран Картон
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Жан Коломб
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Йос Лиферинкс
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Симон Мармион
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Жан Перреаль
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1500 по 1599 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1600 по 1699 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1700 по 1799 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1800 по 1899 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1900 по 1999 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 2000 г.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="accordion-ger" class="tab-content" data-path="ger">
+              <b class="catalog-accordion__heading">C 1400 по 1499 гг</b>
+              <div>
+                <ul class="catalog-artist-list">
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Ханс Бургкмайр
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Ханс Бургкмайр
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Михаэль Вольгемут
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Альбрехт Дюрер
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Вольфганг Катцхаймер
+                    </button>
+                  </li>
+                  <li class="catalog-artist-item">
+                    <button class="catalog-artist-item__btn" data-btn="noname">
+                      Конрад фон Зост
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1500 по 1599 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1600 по 1699 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1700 по 1799 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1800 по 1899 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 1900 по 1999 гг.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <b class="catalog-accordion__heading">
+                C 2000 г.
+              </b>
+              <div>
+                <div class="catalog-accordion-desc">
+                  <div class="catalog-accordion-desc-img">
+                    <div class="catalog-accordion-desc-img__inside"></div>
+                  </div>
+                  <div class="catalog-accordion-desc-text">
+                    <b class="catalog-accordion-desc-text__heading">
+                      Здесь пока пусто
+                    </b>
+                    <span class="catalog-accordion-desc-text__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </span>
+                    <a href="#gallery" class="catalog-accordion-desc-text__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div id="accordion-rus" class="tab-content" data-path="rus">
+            <b class="catalog-accordion__heading">C 1400 по 1499 гг.</b>
+            <div>
+              <ul class="catalog-artist-list">
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Феофан Грек
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Андрей Рублев
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Дионисий
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1500 по 1599 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1600 по 1699 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1700 по 1799 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1800 по 1899 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1900 по 1999 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 2000 г.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion-esp" class="tab-content" data-path="esp">
+            <b class="catalog-accordion__heading">C 1400 по 1499 гг.</b>
+            <div>
+              <ul class="catalog-artist-list">
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Бартоломе Бермехо
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Алонсо Берругете
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Педро Берругете
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Луис Далмау
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Михель Зиттов
+                  </button>
+                </li>
+                <li class="catalog-artist-item">
+                  <button class="catalog-artist-item__btn" data-btn="noname">
+                    Пере Серра
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1500 по 1599 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1600 по 1699 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1700 по 1799 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1800 по 1899 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 1900 по 1999 гг.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <b class="catalog-accordion__heading">
+              C 2000 г.
+            </b>
+            <div>
+              <div class="catalog-accordion-desc">
+                <div class="catalog-accordion-desc-img">
+                  <div class="catalog-accordion-desc-img__inside"></div>
+                </div>
+                <div class="catalog-accordion-desc-text">
+                  <b class="catalog-accordion-desc-text__heading">
+                    Здесь пока пусто
+                  </b>
+                  <span class="catalog-accordion-desc-text__text">
+                    А в галерее вы всегда можете найти что-то интересное для себя
+                  </span>
+                  <a href="#gallery" class="catalog-accordion-desc-text__link">
+                    В галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -1152,373 +1792,101 @@
 
     <section class="developments">
       <div class="container container-developments">
-        <h2 class="section-heading developments-heading">
+        <h2 class="section-heading developments__heading">
           События
         </h2>
-        <ul class="developments-list">
-          <li class="developments-item">
-            <img src="img/developments1-min.jpg" alt="" class="developments-item__img">
-            <img src="img/developments1024-1-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  Музей им. Щусева
-                </small>
-                <small class="developments-item-place__text">
-                  с 20 марта по 30 апреля
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                Книжная гравюра в живом восприятии
-              </h3>
-              <p class="developments-item__text">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
+       <ul class="developments-list">
+         <li class="developments-item">
+           <picture class="developments-item-picture">
+              <source srcset="img/developments1024-1-min.jpg" media="(max-width: 1024px)">
+              <source srcset="img/developments768-1-min.jpg" media="(max-width: 768px)">
+              <source srcset="img/developments1024-1-min.jpg" media="(max-width: 540px)">
+              <img src="img/developments1-min.jpg" alt="">
+           </picture>
+           <div class="developments-item-desc">
+             <div class="developments-item-desc-small">
+               <small class="developments-item-desc-small__small">Музей им. Щусева</small>
+               <small class="developments-item-desc-small__small">с 20 марта по 30 апреля</small>
+             </div>
+             <b class="developments-item-desc__heading">Книжная гравюра в живом восприятии</b>
+             <p class="developments-item-desc__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+             <a href="#gallery" class="developments-item-desc__link">Подробнее</a>
+           </div>
+         </li>
 
-          <li class="developments-item">
-            <img src="img/developments2-min.jpg" alt="" class="developments-item__img">
-            <img src="img/developments1024-2-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  ММОМА
-                </small>
-                <small class="developments-item-place__text">
-                  24 марта 19:00
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-              </h3>
-              <p class="developments-item__text text">
-                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
+         <li class="developments-item">
+          <picture class="developments-item-picture">
+             <source srcset="img/developments1024-2-min.jpg" media="(max-width: 1024px)">
+             <source srcset="img/developments768-2-min.jpg" media="(max-width: 768px)">
+             <source srcset="img/developments1024-2-min.jpg" media="(max-width: 540px)">
+             <img src="img/developments2-min.jpg" alt="">
+          </picture>
+          <div class="developments-item-desc">
+            <div class="developments-item-desc-small">
+              <small class="developments-item-desc-small__small">ММОМА</small>
+              <small class="developments-item-desc-small__small">24 марта 19:00</small>
             </div>
-          </li>
-
-          <li class="developments-item">
-            <img src="img/developments3-min.jpg" alt="" class="developments-item__img">
-            <img src="img/developments1024-3-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  Еврейский музей
-                </small>
-                <small class="developments-item-place__text">
-                  с 31 марта по 21 апреля
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                Выставка «Формация 2020»
-              </h3>
-              <p class="developments-item__text text">
-                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="developments-list developments-list--hidden developments-list--mt">
-          <li class="developments-item">
-            <img src="img/developments4-min.jpg" alt="" class="developments-item__img">
-            <img src="img/developments1024-4-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  Третьяковка на Крымском валу
-                </small>
-                <small class="developments-item-place__text">
-                  с 30 марта по 30 апреля
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                XXIV Международная биеннале молодого искусства
-              </h3>
-              <p class="developments-item__text text">
-                Внезапно, реплицированные с зарубежных источников, современные исследования.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-
-          <li class="developments-item">
-            <img src="img/developments5-min.jpg" alt="" class="developments-item__img">
-            <img src="img/developments1024-5-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  ММАМ
-                </small>
-                <small class="developments-item-place__text">
-                  с 8 апреля по 20 мая
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                Джон Винзор. Фотографии из серии «Метафора серебра»
-              </h3>
-              <p class="developments-item__text text">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="developments-list developments-list-768">
-          <li class="developments-item">
-            <img src="img/developments768-1-min.jpg" alt="" class="developments-item__img">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  Музей им. Щусева
-                </small>
-                <small class="developments-item-place__text">
-                  с 20 марта по 30 апреля
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                Книжная гравюра в живом восприятии
-              </h3>
-              <p class="developments-item__text">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-
-          <li class="developments-item">
-            <img src="img/developments768-2-min.jpg" alt="" class="developments-item__img">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  ММОМА
-                </small>
-                <small class="developments-item-place__text">
-                  24 марта 19:00
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-              </h3>
-              <p class="developments-item__text text">
-                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="developments-list-768 developments-list-768--hidden">
-          <li class="developments-item">
-            <img src="img/developments768-3-min.jpg" alt="" class="developments-item__img">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  Еврейский музей
-                </small>
-                <small class="developments-item-place__text">
-                  с 31 марта по 21 апреля
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                Выставка «Формация 2020»
-              </h3>
-              <p class="developments-item__text text">
-                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-
-          <li class="developments-item">
-            <img src="img/developments768-4-min.jpg" alt="" class="developments-item__img">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  Третьяковка на Крымском валу
-                </small>
-                <small class="developments-item-place__text">
-                  с 30 марта по 30 апреля
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                XXIV Международная биеннале молодого искусства
-              </h3>
-              <p class="developments-item__text text">
-                Внезапно, реплицированные с зарубежных источников, современные исследования.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-
-          <li class="developments-item">
-            <img src="img/developments768-5-min.jpg" alt="" class="developments-item__img">
-            <div class="developments-item-desc">
-              <div class="developments-item-place">
-                <small class="developments-item-place__text">
-                  ММАМ
-                </small>
-                <small class="developments-item-place__text">
-                  с 8 апреля по 20 мая
-                </small>
-              </div>
-              <h3 class="developmnets-item__heading">
-                Джон Винзор. Фотографии из серии «Метафора серебра»
-              </h3>
-              <p class="developments-item__text text">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-              </p>
-              <a href="" class="developments-item__link">
-                Подробнее
-              </a>
-            </div>
-          </li>
-        </ul>
-        <button class="developments__btn">Все события</button>
-
-        <div class="swiper developments-list-swiper">
-          <div class="swiper-wrapper developments-swiper-wrapper">
-            <div class="swiper-slide developments-item developments-item-swiper">
-              <img src="img/developments1024-1-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-              <div class="developments-item-desc">
-                <div class="developments-item-place">
-                  <small class="developments-item-place__text">
-                    Музей им. Щусева
-                  </small>
-                  <small class="developments-item-place__text">
-                    с 20 марта по 30 апреля
-                  </small>
-                </div>
-                <h3 class="developmnets-item__heading">
-                  Книжная гравюра в живом восприятии
-                </h3>
-                <p class="developments-item__text">
-                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-                </p>
-                <a href="" class="developments-item__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide developments-item developments-item-swiper">
-              <img src="img/developments1024-2-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-              <div class="developments-item-desc">
-                <div class="developments-item-place">
-                  <small class="developments-item-place__text">
-                    ММОМА
-                  </small>
-                  <small class="developments-item-place__text">
-                    24 марта 19:00
-                  </small>
-                </div>
-                <h3 class="developmnets-item__heading">
-                  «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-                </h3>
-                <p class="developments-item__text text">
-                  Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
-                </p>
-                <a href="" class="developments-item__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide developments-item developments-item-swiper">
-              <img src="img/developments1024-3-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-              <div class="developments-item-desc">
-                <div class="developments-item-place">
-                  <small class="developments-item-place__text">
-                    Еврейский музей
-                  </small>
-                  <small class="developments-item-place__text">
-                    с 31 марта по 21 апреля
-                  </small>
-                </div>
-                <h3 class="developmnets-item__heading">
-                  Выставка «Формация 2020»
-                </h3>
-                <p class="developments-item__text text">
-                  Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
-                </p>
-                <a href="" class="developments-item__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide developments-item developments-item-swiper">
-              <img src="img/developments1024-4-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-              <div class="developments-item-desc">
-                <div class="developments-item-place">
-                  <small class="developments-item-place__text">
-                    Третьяковка на Крымском валу
-                  </small>
-                  <small class="developments-item-place__text">
-                    с 30 марта по 30 апреля
-                  </small>
-                </div>
-                <h3 class="developmnets-item__heading">
-                  XXIV Международная биеннале молодого искусства
-                </h3>
-                <p class="developments-item__text text">
-                  Внезапно, реплицированные с зарубежных источников, современные исследования.
-                </p>
-                <a href="" class="developments-item__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide developments-item developments-item-swiper">
-              <img src="img/developments1024-5-min.jpg" alt="" class="developments-item__img developments-item__img--1024">
-              <div class="developments-item-desc">
-                <div class="developments-item-place">
-                  <small class="developments-item-place__text">
-                    ММАМ
-                  </small>
-                  <small class="developments-item-place__text">
-                    с 8 апреля по 20 мая
-                  </small>
-                </div>
-                <h3 class="developmnets-item__heading">
-                  Джон Винзор. Фотографии из серии «Метафора серебра»
-                </h3>
-                <p class="developments-item__text text">
-                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
-                </p>
-                <a href="" class="developments-item__link">
-                  Подробнее
-                </a>
-              </div>
-            </div>
+            <b class="developments-item-desc__heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</b>
+            <p class="developments-item-desc__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+            <a href="#gallery" class="developments-item-desc__link">Подробнее</a>
           </div>
+        </li>
 
-          <div class="swiper-pagination swiper-pagination-developments"></div>
-        </div>
+        <li class="developments-item">
+          <picture class="developments-item-picture">
+             <source srcset="img/developments1024-3-min.jpg" media="(max-width: 1024px)">
+             <source srcset="img/developments768-3-min.jpg" media="(max-width: 768px)">
+             <source srcset="img/developments1024-3-min.jpg" media="(max-width: 540px)">
+             <img src="img/developments3-min.jpg" alt="">
+          </picture>
+          <div class="developments-item-desc">
+            <div class="developments-item-desc-small">
+              <small class="developments-item-desc-small__small">Еврейский музей</small>
+              <small class="developments-item-desc-small__small">с 31 марта по 21 апреля</small>
+            </div>
+            <b class="developments-item-desc__heading">Выставка «Формация 2020»</b>
+            <p class="developments-item-desc__text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+            <a href="#gallery" class="developments-item-desc__link">Подробнее</a>
+          </div>
+        </li>
+
+        <li class="developments-item">
+          <picture class="developments-item-picture">
+             <source srcset="img/developments1024-4-min.jpg" media="(max-width: 1024px)">
+             <source srcset="img/developments768-4-min.jpg" media="(max-width: 768px)">
+             <source srcset="img/developments1024-4-min.jpg" media="(max-width: 540px)">
+             <img src="img/developments4-min.jpg" alt="">
+          </picture>
+          <div class="developments-item-desc">
+            <div class="developments-item-desc-small">
+              <small class="developments-item-desc-small__small">Третьяковка на Крымском валу</small>
+              <small class="developments-item-desc-small__small">с 30 марта по 30 апреля</small>
+            </div>
+            <b class="developments-item-desc__heading">XXIV Международная биеннале молодого искусства</b>
+            <p class="developments-item-desc__text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+            <a href="#gallery" class="developments-item-desc__link">Подробнее</a>
+          </div>
+        </li>
+
+        <li class="developments-item">
+          <picture class="developments-item-picture">
+             <source srcset="img/developments1024-5-min.jpg" media="(max-width: 1024px)">
+             <source srcset="img/developments768-5-min.jpg" media="(max-width: 768px)">
+             <source srcset="img/developments1024-5-min.jpg" media="(max-width: 540px)">
+             <img src="img/developments5-min.jpg" alt="">
+          </picture>
+          <div class="developments-item-desc">
+            <div class="developments-item-desc-small">
+              <small class="developments-item-desc-small__small">ММАМ</small>
+              <small class="developments-item-desc-small__small">с 8 апреля по 20 мая</small>
+            </div>
+            <b class="developments-item-desc__heading">Джон Винзор. Фотографии из серии «Метафора серебра»</b>
+            <p class="developments-item-desc__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            <a href="#gallery" class="developments-item-desc__link">Подробнее</a>
+          </div>
+        </li>
+       </ul>
+       <button class="developments__btn">Все события</button>
       </div>
     </section>
 

@@ -39,20 +39,23 @@
   border-radius: 50%;
 }
 
-.tab-content {
-  display: none;
+.catalog-desc {
   margin-bottom: 40px;
   padding-top: 9px;
 }
 
-.tab-content-active {
-  display: block;
-}
-
-.tab-content__text {
+.catalog-desc__text {
   width: 69%;
   margin-top: 3px;
   margin-bottom: 0;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content--active {
+  display: block;
 }
 
 .catalog-artist {
@@ -69,7 +72,7 @@
 }
 
 .catalog-artist-desc-img {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
 }
 
 .catalog-artist-desc__name {

@@ -121,48 +121,72 @@ const swiperMobile = new Swiper('.swiper-container-mobile', {
 });
 
 
+// АККОРДИОН
+
+$( function() {
+  $( "#accordion-ita" ).accordion({
+    heightStyle: "content"
+  });
+});
+
+$( function() {
+  $( "#accordion-fr" ).accordion({
+    heightStyle: "content"
+  });
+});
+
+$( function() {
+  $( "#accordion-ger" ).accordion({
+    heightStyle: "content"
+  });
+});
+
+$( function() {
+  $( "#accordion-rus" ).accordion({
+    heightStyle: "content"
+  });
+});
+
+
+$( function() {
+  $( "#accordion-esp" ).accordion({
+    heightStyle: "content"
+  });
+});
+
 // ТАБЫ
 // Переключатель языка
 document.querySelectorAll('.catalog-tabs-item-btn').forEach(function(tabsBtn) {
   tabsBtn.addEventListener('click', function(event) {
-    const path = event.currentTarget.dataset.path
-    const target = event.currentTarget.dataset.target
+    const target = event.currentTarget.dataset.target;
+    const path = event.currentTarget.dataset.path;
     document.querySelectorAll('.tab-content').forEach(function(tabContent) {
-      tabContent.classList.remove('tab-content-active')
-    })
+      tabContent.classList.remove('tab-content--active');
+    });
     document.querySelectorAll('.catalog-tabs-item-btn').forEach(function(btn){
-      btn.classList.remove('catalog-tabs-item-btn--active')
+      btn.classList.remove('catalog-tabs-item-btn--active');
     });
     event.currentTarget.classList.add('catalog-tabs-item-btn--active');
-    document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
-  })
-})
+    document.querySelector(`[data-path="${target}"]`).classList.add('tab-content--active');
+  });
+});
 
 // Выбор художника
 
 document.querySelectorAll('.catalog-artist-item__btn').forEach(function(artistBtn) {
   artistBtn.addEventListener('click', function(event) {
-    const target = event.currentTarget.dataset.target
+    const btn = event.currentTarget.dataset.btn;
     const contant = event.currentTarget.dataset.contant;
     document.querySelectorAll('.catalog-artist-desc').forEach(function(artistContent) {
-      artistContent.classList.remove('artist-active')
-    })
-    document.querySelectorAll('.catalog-artist-item__btn').forEach(function(btn){
-      btn.classList.remove('artist-btn__active')
+      artistContent.classList.remove('artist-active');
+    });
+    document.querySelectorAll('.catalog-artist-item__btn').forEach(function(button){
+      button.classList.remove('artist-btn__active');
     });
     event.currentTarget.classList.add('artist-btn__active');
-    document.querySelector(`[data-content="${target}"]`).classList.add('artist-active')
-  })
-})
-
-// АККОРДИОН
-
-$( function() {
-  $( "#accordion" ).accordion({
-    heightStyle: "content"
+    document.querySelector(`[data-content="${btn}"]`).classList.add('artist-active');
   });
 });
-
 
 // Выпадающие события
 
@@ -179,17 +203,7 @@ document.querySelector('.developments__btn').addEventListener('click', function(
 
 // Свайпер СОБЫТИЯ
 
-const swiperDevelopments = new Swiper('.developments-list-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 27,
 
-  pagination: {
-    el: '.swiper-pagination-developments',
-    type: 'bullets',
-  }
-});
 
 // Свайпер ИЗДАНИЯ
 
