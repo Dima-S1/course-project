@@ -25,6 +25,7 @@
   margin-bottom: 27px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   color: #fff;
 }
 
@@ -111,6 +112,13 @@
   width: 73px;
   background-color: rgba(157, 92, 208, 0.5);
   color: #fff;
+}
+
+.price-input__input {
+  -moz-appearance: textfield;
+}
+.price-input__input::-webkit-inner-spin-button {
+  display: none;
 }
 
 .edition-swiper {
