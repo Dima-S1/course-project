@@ -55,7 +55,7 @@
 }
 
 .tab-content--active {
-  display: block;
+  display: flex;
 }
 
 .catalog-artist {
@@ -142,6 +142,7 @@
   padding-top: 26px;
   padding-bottom: 56px;
   columns: 3 196px;
+  border-bottom: 1px solid #CACACA;
 }
 
 .catalog-artist-item__btn {

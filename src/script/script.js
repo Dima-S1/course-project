@@ -191,14 +191,8 @@ document.querySelectorAll('.catalog-artist-item__btn').forEach(function(artistBt
 // Выпадающие события
 
 document.querySelector('.developments__btn').addEventListener('click', function() {
-  document.querySelector('.developments-list--hidden').classList.toggle('developments-list--hidden');
-  document.querySelector('.developments__btn').classList.add('developments__btn--hidden');
-})
-
-
-document.querySelector('.developments__btn').addEventListener('click', function() {
-  document.querySelector('.developments-list-768--hidden').classList.toggle('developments-list-768--hidden');
-  document.querySelector('.developments__btn').classList.add('developments__btn--hidden');
+  document.querySelector('.developments-cards--hidden').classList.add('developments-cards--active');
+  document.querySelector('.developments__btn').classList.add('developments__btn--hidden')
 })
 
 // Свайпер СОБЫТИЯ

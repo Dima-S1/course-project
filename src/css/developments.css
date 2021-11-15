@@ -1,5 +1,11 @@
 .developments {
   padding-top: 99px;
+  padding-bottom: 79px;
+}
+
+.container-developments{
+  display: flex;
+  flex-direction: column;
 }
 
 .developments__heading {
@@ -12,9 +18,15 @@
 }
 
 .developments-item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 50px;
   flex-basis: 31.2%;
+}
+
+.developments-cards--hidden {
+  display: none;
 }
 
 .developments-item-picture {
@@ -32,6 +44,7 @@
   padding-right: 17px;
   padding-bottom: 19px;
   padding-left: 49px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #CACACA;
@@ -64,7 +77,7 @@
 }
 
 .developments-item-desc__text {
-  padding-bottom: 82px;
+  padding-bottom: 133px;
   width: 95%;
 }
 
@@ -72,8 +85,50 @@
   position: absolute;
   padding-bottom: 3px;
   left: 50px;
-  bottom: 19px;
+  bottom: 43px;
   line-height: 1;
   color: #9D5CD0;
   border-bottom: 1px solid #9D5CD0;
+}
+
+.developments__btn {
+  align-self: center;
+  padding: 19px 33px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #9D5CD0;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s, outline 0.3s;
+}
+
+.developments__btn--hidden {
+  display: none;
+}
+
+.developments-cards--active {
+  display: flex;
+}
+
+/* FOCUS */
+
+.developments__btn:focus {
+  outline: 2px solid #C283F3;
+  outline-offset: 3px;
+}
+
+/* HOVER */
+
+.developments__btn:hover {
+  background-color: #9D5CD0;
+  color: #fff;
+}
+
+/* ACTIVE */
+
+.developments__btn:active {
+  background-color: #7943A4;
+  border: 3px solid #D1A9F0;
+  color: #fff;
 }
