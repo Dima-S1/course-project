@@ -128,11 +128,11 @@
 }
 
 .header-menu-item:not(:last-child) {
-  margin-right: 87px;
+  margin-right: 96px;
 }
 
 .header-menu-item-link {
-  padding: 4px;
+  padding: 4px 0;
   font-size: 18px;
   color: #fff;
   transition: color 0.3s;

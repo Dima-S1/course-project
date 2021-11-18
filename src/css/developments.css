@@ -1,6 +1,6 @@
 .developments {
   padding-top: 99px;
-  padding-bottom: 79px;
+  padding-bottom: 80px;
 }
 
 .container-developments{
@@ -78,17 +78,22 @@
 
 .developments-item-desc__text {
   padding-bottom: 133px;
+  margin-block-start: 0;
+  margin-block-end: 0;
   width: 95%;
 }
 
 .developments-item-desc__link {
   position: absolute;
+  display: inline-block;
+  padding: 3px;
   padding-bottom: 3px;
   left: 50px;
   bottom: 43px;
   line-height: 1;
   color: #9D5CD0;
   border-bottom: 1px solid #9D5CD0;
+  transition: color 0.3s, border-bottom-color 0.3s;
 }
 
 .developments__btn {
@@ -118,7 +123,19 @@
   outline-offset: 3px;
 }
 
+.developments-item-desc__link:focus {
+  outline: none;
+  background-color: #9D5CD0;
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 /* HOVER */
+
+.developments-item-desc__link:hover {
+  color: #7943A4;
+  border-bottom-color: #7943A4;
+}
 
 .developments__btn:hover {
   background-color: #9D5CD0;
@@ -126,6 +143,11 @@
 }
 
 /* ACTIVE */
+
+.developments-item-desc__link:active {
+  color: #333333;
+  border-bottom-color: #333333;
+}
 
 .developments__btn:active {
   background-color: #7943A4;
