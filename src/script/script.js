@@ -217,3 +217,38 @@ const swiperEdition = new Swiper('.edition-swiper', {
     prevEl: '.swiper-button-prev',
   }
 })
+
+// ТУЛТИПЫ
+
+tippy('#tooltip1', {
+  content: 'Пример современных тенденций - современная методология разработки',
+  trigger: 'click',
+  theme: 'blue',
+});
+
+tippy('#tooltip2', {
+  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  ',
+  trigger: 'click',
+  theme: 'blue',
+});
+
+tippy('#tooltip3', {
+  content: 'В стремлении повысить качество',
+  trigger: 'click',
+  theme: 'blue',
+});
+
+// СВАЙПЕР ПРОЕКТЫ
+
+const projectSwiper = new Swiper('.project-swiper', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 50,
+  slidesPerView: 3,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})
