@@ -252,3 +252,115 @@ const projectSwiper = new Swiper('.project-swiper', {
     prevEl: '.swiper-button-prev',
   }
 })
+
+// КАРТА
+
+ymaps.ready(init);
+function init(){
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [55.76, 37.64],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 14
+    });
+
+    myMap.controls.remove('zoomControl')
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('routeButton');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('typeSelector');
+    myMap.controls.remove('rulerControl');
+    myMap.controls.remove('fullscreenControl');
+    myMap.controls.remove('geolocationControl');
+
+    var zoomControl = new ymaps.control.ZoomControl({
+      options: {
+          size: 'small',
+          width: '150px',
+          position: {
+            top: '260px',
+            right: '23px'
+        }
+      }
+    });
+
+    myMap.controls.add('geolocationControl', {
+      float: 'none',
+      position: {
+        top: '330px',
+        right: '23px',
+      }
+  })
+
+  var myPlacemark = new ymaps.Placemark([55.76, 37.60], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/point.svg',
+    iconImageSize: [20, 20],
+    iconImageOffset: [0, 0]
+});
+
+    myMap.controls.add(zoomControl);
+    myMap.geoObjects.add(myPlacemark);
+}
+
+
+// МАСКА И ВАЛИДАЦИЯ ФОРМЫ
+
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask ("+7 (999) 999-99-99")
+
+im.mask(selector);
+
+const validation = new JustValidate(
+  '#form',
+  {
+    errorFieldCssClass: 'is-invalid',
+    errorFieldStyle: {
+      border: '1px solid red',
+    },
+    errorLabelCssClass: 'is-label-invalid',
+    errorLabelStyle: {
+      color: 'red',
+      textDecoration: 'underlined',
+    },
+    focusInvalidField: true,
+    lockForm: true,
+    tooltip: {
+      position: 'top',
+    },
+  },
+);
+
+validation
+  .addField('#name', [
+    {
+      rule: 'required',
+      errorMessage: 'Поле обязательно',
+    },
+    {
+      rule: 'customRegexp',
+      value: /(?=.*[а-я])(?=.*[А-Я])/,
+      errorMessage: 'Неверный формат',
+    },
+  ])
+  .addField('#tel', [
+    {
+      rule: 'required',
+      errorMessage: 'Поле обязательно',
+    },
+    {
+      rule: 'minLength',
+      value: 10,
+      errorMessage: 'Введите 10 символов',
+    },
+    {
+      rule: 'maxLength',
+      value: 10,
+      errorMessage: 'Введите 10 символов',
+    },
+  ])

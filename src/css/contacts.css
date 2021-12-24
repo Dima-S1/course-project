@@ -1,0 +1,159 @@
+.contacts {
+  padding-top: 17px;
+}
+
+.contacts-wrapper {
+  display: flex;
+}
+
+.contacts-heading {
+  margin-bottom: 32px;
+}
+
+.contacts-main {
+  padding-top: 128px;
+  padding-bottom: 113px;
+  display: flex;
+  flex-direction: column;
+  width: 35.5%;
+  border: 1px solid #CACACA;
+}
+
+.container-contacts-main {
+  padding-left: 0;
+}
+
+.contacts-address {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-address__name {
+  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.contacts-address__address {
+  font-style: normal;
+}
+
+.contacts-form {
+  margin-bottom: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts-from__legend {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.contacts-form__input {
+  margin-bottom: 22px;
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 128%;
+  color: #333;
+  border: 1px solid #333333;
+  border-radius: 100px;
+}
+
+.contacts-form__input::placeholder {
+  color: #999;
+}
+
+.contacts-form__btn {
+  padding: 17px 33px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #9D5CD0;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+  transition: background-color 0.3s, color 0.3s, outline 0.3s;
+}
+
+.contacts-links__heading {
+  margin-bottom: 14px;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.contacts-links__link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.contacts-links__link {
+  display: inline-block;
+  transition: filter 0.3s, border 0.3s;
+}
+
+.contacts-links__link svg {
+  border-radius: 100%;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+
+.just-validate-error-label[data-tooltip=true] {
+  padding: 0;
+  font-size: 12px;
+  color: red;
+  background-color: transparent;
+}
+
+.just-validate-error-label[data-tooltip=true]::before {
+  display: none;
+}
+
+/* HOVER */
+
+.contacts-form__input:hover {
+  background-color: #EAEAEA;
+}
+
+.contacts-form__btn:hover {
+  background-color: #9D5CD0;
+  color: #fff;
+}
+
+.contacts-links__link:hover {
+  filter: grayscale(100%);
+}
+
+/* FOCUS */
+
+.contacts-form__input:focus {
+  background-color: #EAEAEA;
+  color: #333;
+  outline: none;
+}
+
+.contacts-form__btn:focus {
+  outline: 2px solid #C283F3;
+  outline-offset: 2px;
+}
+
+.contacts-links__link:focus {
+  filter: grayscale(100%);
+}
+
+/* ACTIVE */
+
+.contacts-form__btn:active {
+  background-color: #7943A4;
+}
+
+.contacts-links__link:active svg {
+  filter: none;
+  border: 1px solid #9643A4;
+}
