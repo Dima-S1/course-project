@@ -1,0 +1,57 @@
+.footer {
+  padding-top: 47px;
+  padding-bottom: 40px;
+  background-color: #000;
+}
+
+.container-footer {
+  display: flex;
+}
+
+.footer-logo {
+  padding-top: 3px;
+  margin-right: auto;
+}
+
+.footer-soc {
+  display: flex;
+}
+
+.footer-soc-link {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-soc-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-soc-link svg path {
+  transition: fill 0.3s;
+}
+
+/* HOVER */
+
+.footer-soc-link:hover svg path {
+  fill: #fff;
+}
+
+/* FOCUS */
+
+.footer-soc-link:focus svg path {
+  fill: #fff;
+}
+
+.footer-soc-link:focus-visible {
+  outline: none;
+}
+
+.footer-logo:focus-visible {
+  outline: none;
+}
+
+/* ACTIVE */
+
+.footer-soc-link:active svg path {
+  fill: #9D5CD0;
+}

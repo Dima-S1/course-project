@@ -325,7 +325,6 @@
 /* FOCUS */
 
 .header-menu-item-link:focus,
-.header-logo:focus,
 .header-nav-item-link:focus,
 .header-btn-lk:focus,
 .header-menu-item:focus,
@@ -336,7 +335,8 @@
   outline: none;
 }
 
-.header-search-btn:focus {
+.header-search-btn:focus,
+.header-logo:focus {
   outline: none;
 }
 
