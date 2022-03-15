@@ -2,69 +2,23 @@
   padding-top: 17px;
 }
 
-.contacts-wrapper {
+.container-contacts{
   display: flex;
-}
-
-.contacts-heading {
-  margin-bottom: 32px;
-}
-
-.contacts-main {
-  padding-top: 128px;
-  padding-bottom: 113px;
-  display: flex;
-  flex-direction: column;
-  width: 35.5%;
-  border: 1px solid #CACACA;
-}
-
-.container-contacts-main {
-  padding-left: 0;
-}
-
-.contacts-address {
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contacts-address__name {
-  margin-bottom: 7px;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 600;
-}
-
-.contacts-address__address {
-  font-style: normal;
 }
 
 .contacts-form {
-  margin-bottom: 38px;
+  display: flex;
+}
+
+.contacts-address {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  font-style: normal;
 }
 
-.contacts-from__legend {
-  margin-bottom: 16px;
-  font-size: 24px;
-}
-
-.contacts-form__input {
-  margin-bottom: 22px;
-  padding-left: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 128%;
-  color: #333;
-  border: 1px solid #333333;
-  border-radius: 100px;
-}
-
-.contacts-form__input::placeholder {
-  color: #999;
+.contacts-links {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-form__btn {

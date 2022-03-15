@@ -234,12 +234,26 @@
 
 
 @media(max-width: 1580px) {
+  .catalog-heading {
+    margin-right: 33px;
+  }
+
   .catalog {
     padding-top: 82px;
+    padding-bottom: 40px;
   }
 
   .catalog-tabs-list {
-    padding-top: 8px;
+    display: none;
+  }
+
+  .catalog-desc {
+    padding-top: 3px;
+  }
+
+  .catalog-desc__text {
+    margin-top: 28px;
+    width: 100%;
   }
 
   .catalog-tabs-item {
@@ -251,7 +265,7 @@
   }
 
   .catalog-accordion__heading {
-    padding-top: 43px;
+    padding-top: 45px;
   }
 
   .tab-content {
@@ -270,6 +284,10 @@
 
 @media (max-width: 768px) {
 
+  .catalog {
+    padding-bottom: 52px;
+  }
+
   .catalog-top {
     margin-bottom: 9px;
   }
@@ -282,16 +300,24 @@
     margin-right: 34px;
   }
 
+  .catalog-desc {
+    margin-bottom: 20px;
+  }
+
+  .catalog-desc__text {
+    margin-top: 20px;
+  }
+
   .catalog-artist {
     flex-direction: column;
   }
 
-  .catalog-artist-left {
-    order: 2;
+  .catalog-accordion__heading {
+    padding-top: 46px;
   }
 
-  .catalog-accordion__heading {
-    padding-top: 44px;
+  .catalog-accordion__heading::after {
+    top: 33px;
   }
 
   .catalog-artist-right {
@@ -304,23 +330,38 @@
     margin-bottom: 20px;
   }
 
+  .tab-content--active {
+    flex-direction: column;
+  }
+
   .catalog-artist-list {
-    padding-bottom: 58px;
+    padding-bottom: 56px;
+    padding-top: 24px;
   }
 
   .catalog-artist-left {
-    width: 100%;
     margin-right: 0;
+    order: 2;
+    width: 100%;
   }
 }
 
 @media (max-width: 540px) {
   .catalog {
     padding-top: 36px;
+    padding-bottom: 22px;
   }
 
   .catalog-heading {
-    margin-bottom: 15px;
+    margin-bottom: 4px;
+  }
+
+  .catalog-desc {
+    margin-bottom: 0;
+  }
+
+  .catalog-desc__text {
+    display: none;
   }
 
   .catalog-top {
@@ -339,10 +380,6 @@
   .catalog-tabs-item-btn {
     width: 32px;
     height: 32px;
-  }
-
-  .tab-content {
-    display: none;
   }
 
   .catalog-accordion__heading {
@@ -364,17 +401,16 @@
   }
 
   .catalog-artist-list {
-    padding-top: 17px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    max-height: initial;
   }
 
   .catalog-artist-right {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .catalog-artist-desc-img {
-    margin-bottom: 11px;
+    margin-bottom: 20px;
   }
 
   .catalog-artist-desc__name {

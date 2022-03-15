@@ -155,6 +155,7 @@ $( function() {
 });
 
 // ТАБЫ
+
 // Переключатель языка
 document.querySelectorAll('.catalog-tabs-item-btn').forEach(function(tabsBtn) {
   tabsBtn.addEventListener('click', function(event) {
@@ -188,36 +189,6 @@ document.querySelectorAll('.catalog-artist-item__btn').forEach(function(artistBt
   });
 });
 
-// Выпадающие события
-
-document.querySelector('.developments__btn').addEventListener('click', function() {
-  document.querySelector('.developments-cards--hidden').classList.add('developments-cards--active');
-  document.querySelector('.developments__btn').classList.add('developments__btn--hidden')
-})
-
-// Свайпер СОБЫТИЯ
-
-
-
-// Свайпер ИЗДАНИЯ
-
-const swiperEdition = new Swiper('.edition-swiper', {
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 50,
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
-})
-
 // ТУЛТИПЫ
 
 tippy('#tooltip1', {
@@ -238,6 +209,50 @@ tippy('#tooltip3', {
   theme: 'blue',
 });
 
+// СВАЙПЕР СОБЫТИЯ
+
+const devSwiper = new Swiper('.swiper-dev', {
+  direction: 'horizontal',
+  loop: true,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    bulletClass: 'swiper-bullet__dev swiper-pagination-bullet',
+    bulletActiveClass: 'swiper-bullet__dev--active swiper-pagination-bullet-active'
+  },
+
+  breakpoints: {
+    1580: {
+      spaceBetween: 50,
+      slidesPerView: 3,
+    },
+
+    770: {
+      spaceBetween: 27,
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
+
+    180: {
+      slidesPerView: 1,
+    }
+
+  }
+});
+
+
+
 // СВАЙПЕР ПРОЕКТЫ
 
 const projectSwiper = new Swiper('.project-swiper', {
@@ -251,7 +266,8 @@ const projectSwiper = new Swiper('.project-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
-})
+});
+
 
 // КАРТА
 

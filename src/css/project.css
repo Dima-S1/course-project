@@ -8,8 +8,8 @@
 }
 
 .project-desc {
-  margin-bottom: 14px;
-  width: 65%;
+  margin-bottom: 13px;
+  width: 66%;
 }
 
 .tooltip {
@@ -85,9 +85,6 @@
 
 .project-swiper {
   padding: 0 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .project-slide {
@@ -99,11 +96,18 @@
 }
 
 .project-swiper-button {
-  position: relative;
-  flex-grow: 1;
-  flex-shrink: 0;
+  position: absolute;
+  top: 40%;
   background-color: #ECECEC;
   border-color: #ECECEC;
+}
+
+.project-button-prev {
+  left: 0;
+}
+
+.project-button-next {
+  right: 0;
 }
 
 .project-button-prev::after {
@@ -112,17 +116,6 @@
 
 .project-button-next::after {
   content: url(../img/right-arr.svg);
-}
-
-.project-button-next {
-  margin-left: 45px;
-  order: 3;
-  right: 0;
-}
-
-.project-button-prev {
-  margin-right: 45px;
-  left: 0;
 }
 
 .project-slide__img {
