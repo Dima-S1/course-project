@@ -26,9 +26,63 @@
   margin-right: 20px;
 }
 
+.footer-soc-link svg {
+  width: 100%;
+  height: 100%;
+}
+
 .footer-soc-link svg path {
   transition: fill 0.3s;
 }
+
+@media (max-width: 1580px) {
+
+  .footer {
+    padding-bottom: 34px;
+  }
+
+  .footer-soc {
+    transform: translateY(-7px);
+  }
+
+  .footer-soc-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-soc-link:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .footer {
+    padding-top: 22px;
+    padding-bottom: 9px;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    padding-top: 8px;
+    margin-right: 0;
+    order: 2;
+    width: 97px;
+  }
+
+  .footer-soc {
+    order: 1;
+  }
+
+  .footer-soc-link {
+    width: 50px;
+  }
+}
+
 
 /* HOVER */
 

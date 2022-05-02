@@ -230,13 +230,13 @@ const devSwiper = new Swiper('.swiper-dev', {
 
   breakpoints: {
     1580: {
-      spaceBetween: 50,
       slidesPerView: 3,
+      spaceBetween: 50,
     },
 
     770: {
-      spaceBetween: 27,
       slidesPerView: 3,
+      spaceBetween: 27,
     },
 
     550: {
@@ -265,6 +265,26 @@ const projectSwiper = new Swiper('.project-swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    1580: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+
+    770: {
+      slidesPerView: 2,
+    },
+
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
+
+    180: {
+      slidesPerView: 1,
+    }
   }
 });
 
